@@ -10,6 +10,7 @@ city="Krakow"
 echo "I live in $city"
 echo "I love ${city/Krakow/Poznan}" #substituting part of the string
 echo "I love ${city:0:4}"   #slicing the string
+echo "I love Krakow, but much more i enjoy cities starting with a letter '${city#Krako}'"
 echo ${#city} #length of the string
 echo ${city:-"Default City"} #default value if variable is not set
 echo ""
